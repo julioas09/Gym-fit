@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Negro"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+   
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:text="@string/gordaco"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Blanco"
+            android:textSize="35sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/boton1"
+            android:onClick="_entrenamiento" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/boton2"
+            android:onClick="_ejercicios" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/boton3"
+            android:onClick="_peso" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="138dp"
+            android:layout_height="140dp"
+            android:src="@drawable/cuerpo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="@string/acercade"
+                    android:onClick="_acercade"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Azul" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:clickable="true"
+                    android:paddingLeft="50dp"
+                    android:onClick="_ayuda"
+                    android:text="@string/ayuda"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/Azul" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        
+</LinearLayout>

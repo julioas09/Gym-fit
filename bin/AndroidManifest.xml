@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gordaco"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.gordaco.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Entrenamientos"
+            android:label="@string/title_activity_entrenamientos" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Ejercicios"
+            android:label="@string/title_activity_ejercicios"
+            android:parentActivityName="com.example.gordaco.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Peso"
+            android:label="@string/title_activity_peso"
+            android:parentActivityName="com.example.gordaco.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Historial"
+            android:label="@string/title_activity_historial"
+            android:parentActivityName="com.example.gordaco.Peso" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.Peso" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Entrenamiento"
+            android:label="@string/title_activity_entrenamiento"
+            android:parentActivityName="com.example.gordaco.Entrenamientos" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.Entrenamientos" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Acercade"
+            android:label="@string/title_activity_acercade"
+            android:parentActivityName="com.example.gordaco.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Ayuda"
+            android:label="@string/title_activity_ayuda"
+            android:parentActivityName="com.example.gordaco.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Ejercicios2"
+            android:label="@string/title_activity_ejercicios2"
+            android:parentActivityName="com.example.gordaco.Ejercicios" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.Ejercicios" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Ejercicio"
+            android:label="@string/title_activity_ejercicio"
+            android:parentActivityName="com.example.gordaco.Ejercicios2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.Ejercicios2" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Consulta"
+            android:label="@string/title_activity_consulta"
+            android:parentActivityName="com.example.gordaco.Entrenamientos" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.Entrenamientos" />
+        </activity>
+        <activity
+            android:name="com.example.gordaco.Editar"
+            android:label="@string/title_activity_editar"
+            android:parentActivityName="com.example.gordaco.Entrenamiento" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gordaco.Entrenamiento" />
+        </activity>
+    </application>
+
+</manifest>
